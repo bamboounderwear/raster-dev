@@ -1,0 +1,46 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  body {
+    word-break: initial;
+  }
+
+  h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    word-break: initial;
+  }
+
+  .card-title {
+    text-transform: uppercase;
+    word-break: initial;
+  }
+
+  .drop-in {
+    animation: drop-in 1s ease 200ms backwards;
+   }
+   
+   .drop-in-2 {
+    animation: drop-in 1400ms ease 500ms backwards;
+   }
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateY(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
